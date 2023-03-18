@@ -32,7 +32,7 @@ def create_db_table():
                 CREATE TABLE IF NOT EXISTS students(
                     name VARCHAR(20) NOT NULL,
                     id INTEGER UNIQUE NOT NULL,
-                    point INTEGER NOT NULL
+                    point INTEGER NOT NULL CHECK(point >=0 AND point <= 100)
                 );
         """
         )
