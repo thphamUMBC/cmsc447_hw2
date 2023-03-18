@@ -1,25 +1,29 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import All_students from "./All_students";
-import Student from "./Student";
-import Update_student from "./Update_student";
-import Insert_student from "./Insert_student";
-import Delete_student from "./Delete_student";
-import { useState } from "react";
-
+import Retrieve from "./Retrieve";
+import Insert from "./Insert";
+import Update from "./Update.js";
+import { Container } from "react-bootstrap";
 
 function App() {
-  // const triggerFetching = () => {
-  //   setFetching(false);
-  // };
-  const [id, setId] = useState(0);
   return (
-    <div className="App">
-      <All_students />
-      <Update_student />
-      <Insert_student />
-      <Delete_student />
-      <Student id={122} />
-    </div>
+    <>
+      <Container className="bg-light bg-opacity-50 w-75 p-5 border-light rounded-2 my-3">
+        <Update />
+        {/* <Insert />
+      <Retrieve /> */}
+      </Container>
+      <Container className="bg-light bg-opacity-50 w-50 p-5 border-light rounded-2 my-3">
+        {/* <Update /> */}
+        <Insert />
+        {/* <Retrieve /> */}
+      </Container>
+      <Container className="bg-light bg-opacity-50 w-75 p-5 border-light rounded-2 my-3">
+        {/* <Update />
+        <Insert /> */}
+        <Retrieve />
+      </Container>
+    </>
   );
 }
 

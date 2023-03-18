@@ -11,7 +11,7 @@ const get_student_id = (id) => {
   let url = base_url + `/students/id=${id}`;
   return fetch(url, { method: "GET" })
     .then((res) => res.json())
-    .catch((error) => error.response.header);
+    .catch((error) => error.response);
 };
 
 const update_student_id = (student) => {
