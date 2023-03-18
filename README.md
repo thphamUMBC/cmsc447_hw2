@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Fullstack CRUB application for homework 2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Instruction:
 
-## Available Scripts
+**Note:**: you need to have NodeJS and Python installed first.
 
-In the project directory, you can run:
+1. Clone my repository by this command in anywhere you want:
 
-### `npm start`
+    `git clone https://github.com/thphamUMBC/cmsc447_hw2.git FOLDER_NAME`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Go into that folder and right click to open terminal or you can go into that folder by:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    `cd path/to/your/FOLDER_NAME`
 
-### `npm test`
+3. Install npm package by command:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    `npm i`
 
-### `npm run build`
+4. Install virtualenv in python by command:
+    
+    `pip install virtualenv`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Install flask, flask-cors, and python-dotenv:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    `.\backend\env\Scripts\activate`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    `pip install flask flask-cors python-dotenv`
 
-### `npm run eject`
+6. Start your backend. Before you start, go to `package.json` and modify `start-backend-windows` into
+`"start-backend-windows": "cd backend && .\\Scripts\\flask.exe run --no-debugger"`. Now, you can start
+your backend by this command:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    `npm run start-backend-windows`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+7. Start your application:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    `npm start`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
