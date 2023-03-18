@@ -20,19 +20,23 @@
     
     `pip install virtualenv`
 
-5. Install flask, flask-cors, and python-dotenv:
+5. Create virtualenv in backend folder. Before you create it, delete `env` folder first, then run this command in root folder (`FOLDER_NAME`):
+
+    `python -m venv .\backend\`
+
+6. Install flask, flask-cors, and python-dotenv:
 
     `.\backend\env\Scripts\activate`
 
     `pip install flask flask-cors python-dotenv`
 
-6. Start your backend. Before you start, go to `package.json` and modify `start-backend-windows` into
+7. Start your backend. Before you start, go to `package.json` and modify `start-backend-windows` into
 `"start-backend-windows": "cd backend && .\\Scripts\\flask.exe run --no-debugger"`. Now, you can start
-your backend by this command:
+your backend by this command **in different terminal**:
 
     `npm run start-backend-windows`
 
-7. Start your application:
+8. Start your application **in different terminal**:
 
     `npm start`
 
